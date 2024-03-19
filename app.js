@@ -58,3 +58,4 @@ function checkOutputText() {
 
 // Chama a função de verificação quando houver uma mudança na caixa de resultado
 document.getElementById("output").addEventListener("input", checkOutputText);
+
