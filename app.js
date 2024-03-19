@@ -45,17 +45,3 @@ function copyToClipboard() {
         });
 }
 
-// Função para verificar se há texto na caixa de resultado e exibir/ocultar o botão de cópia conforme necessário
-function checkOutputText() {
-    var outputText = document.getElementById("output").value.trim();
-    var copyButton = document.getElementById("copyButton");
-    if (outputText.length > 0) {
-        copyButton.style.display = "inline-block"; // Mostra o botão
-    } else {
-        copyButton.style.display = "none"; // Oculta o botão
-    }
-}
-
-// Chama a função de verificação quando houver uma mudança na caixa de resultado
-document.getElementById("output").addEventListener("input", checkOutputText);
-
