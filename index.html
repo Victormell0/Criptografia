@@ -3,20 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador Decriptador</title>
+    <title>Encriptador de Texto</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Encriptador Decriptador</h1>
-        <div class="input-container">
-            <textarea id="input" placeholder="Digite seu texto aqui..."></textarea>
+    <header>
+        <h1>Encriptador de Texto</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="input-container">
+                <textarea id="input" placeholder="Digite seu texto aqui..."></textarea>
+            </div>
+            <div class="buttons">
+                <button onclick="encrypt()">Encriptar</button>
+                <button onclick="decrypt()">Decriptar</button>
+            </div>
+            <div id="output" class="output"></div> <!-- Adicionando uma div para o output -->
         </div>
-        <div class="buttons">
-            <button onclick="encrypt()">Encriptar</button>
-            <button onclick="decrypt()">Decriptar</button>
+    </main>
+    <footer>
+        <div class="social-text">
+            <p>Desenvolvido por Victor Mello!</p>
         </div>
-    </div>
+        <div class="social-icons">
+            <a href="https://github.com/Victormell0" target="_blank">
+                <i class="fab fa-github"></i> Github
+            </a>
+            <a href="https://www.linkedin.com/in/victormellosilva" target="_blank">
+                <i class="fab fa-linkedin"></i> Linkedin
+            </a>
+        </div>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
