@@ -20,14 +20,11 @@
                 <button onclick="encrypt()">Encriptar</button>
                 <button onclick="decrypt()">Decriptar</button>
             </div>
-            <div id="output" class="output"></div> <!-- Adicionando uma div para o output -->
-            <div class="output-container">
-                <div id="output" class="output" contenteditable="true"></div>
-                <button id="copyButton" onclick="copyToClipboard()" class="copy-button">Copiar</button>
-            </div>
-            
+            <textarea id="output" class="output" readonly></textarea>
+            <button id="copyButton" onclick="copyToClipboard()">Copiar</button>
         </div>
     </main>
+    
     <footer>
         <div class="social-text">
             <p>Desenvolvido por Victor Mello!</p>

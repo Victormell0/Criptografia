@@ -12,7 +12,8 @@ function encrypt() {
                       .replace(/a/g, "ai")
                       .replace(/o/g, "ober")
                       .replace(/u/g, "ufat");
-    document.getElementById("input").value = output;
+    document.getElementById("output").value = output; // Atualiza o valor da caixa de texto
+    checkOutputText(); // Verifica se há texto na caixa de resultado
 }
 
 function decrypt() {
@@ -29,11 +30,12 @@ function decrypt() {
                       .replace(/ai/g, "a")
                       .replace(/ober/g, "o")
                       .replace(/ufat/g, "u");
-    document.getElementById("input").value = output;
+    document.getElementById("output").value = output; // Atualiza o valor da caixa de texto
+    checkOutputText(); // Verifica se há texto na caixa de resultado
 }
 
 function copyToClipboard() {
-    var outputText = document.getElementById("output").innerText;
+    var outputText = document.getElementById("output").value;
     navigator.clipboard.writeText(outputText)
         .then(() => {
             alert("Texto copiado para a área de transferência.");
@@ -45,7 +47,7 @@ function copyToClipboard() {
 
 // Função para verificar se há texto na caixa de resultado e exibir/ocultar o botão de cópia conforme necessário
 function checkOutputText() {
-    var outputText = document.getElementById("output").innerText.trim();
+    var outputText = document.getElementById("output").value.trim();
     var copyButton = document.getElementById("copyButton");
     if (outputText.length > 0) {
         copyButton.style.display = "inline-block"; // Mostra o botão
