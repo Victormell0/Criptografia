@@ -1,25 +1,25 @@
 /* Estilos gerais */
 h1 {
-    color: white; /* Define a cor do título para branco */
+    color: white;
 }
 
 body {
-    background-image: url('Styles/Backuground-site.jpg'); /* Define uma imagem de fundo */
+    background-image: url('Styles/Backuground-site.jpg');
     background-size: cover;
     background-position: center;
-    font-family: Arial, sans-serif; /* Define a família de fontes para Arial ou uma fonte genérica sem serifa */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f4f4f4; /* Define a cor de fundo do corpo para cinza claro */
-    flex-direction: column; /* Define a orientação da flexbox como coluna */
+    background-color: #f4f4f4;
+    flex-direction: column; /* Define a orientação da flexbox */
 }
 
 .container {
-    text-align: center; /* Alinha o conteúdo dentro do contêiner no centro */
+    text-align: center;
 }
 
 /* Estilos do input */
@@ -28,10 +28,10 @@ textarea {
     height: 100px;
     margin-bottom: 10px;
     padding: 10px;
-    border: 2px solid #ccc; /* Adiciona uma borda de 2px sólida cinza claro */
-    border-radius: 8px; /* Adiciona um raio de borda de 8px para cantos arredondados */
-    background-color: #f8f8f8; /* Define a cor de fundo do textarea para cinza claro */
-    color: #333; /* Define a cor do texto para preto */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    color: #333;
     font-size: 16px;
 }
 
@@ -40,20 +40,20 @@ textarea {
     margin: 0 5px;
     padding: 8px 16px;
     cursor: pointer;
-    background-color: #007bff; /* Define a cor de fundo do botão para azul */
-    color: #fff; /* Define a cor do texto para branco */
-    border: none; /* Remove a borda do botão */
-    border-radius: 4px; /* Adiciona um raio de borda de 4px para cantos arredondados */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
 }
 
 .buttons button:hover {
-    background-color: #0056b3; /* Altera a cor de fundo do botão ao passar o mouse */
+    background-color: #0056b3;
 }
 
 /* Estilos do footer */
 footer {
-    background-color: #333; /* Define a cor de fundo do rodapé para preto */
-    color: #fff; /* Define a cor do texto para branco */
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 10px;
     position: fixed;
